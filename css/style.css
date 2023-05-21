@@ -117,12 +117,13 @@ body main section .primer-seccion-pagina{
 body main section div .primer-seccion-pagina-1{
     display: flex;
     flex-direction: column;
+    text-align: center;
     border: 5px ridge black;
     background-color: rgb(162, 120, 202);
-    margin-left: 150px;
+    margin-left: 50px;
+    margin-bottom: 50px;
     margin-top: 50px;
-    margin-bottom: 25px;
-    margin-right: 150px;
+    margin-right: 50px;
 }
 
 @media (max-width:1047px){
@@ -131,35 +132,7 @@ body main section div .primer-seccion-pagina-1{
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 0px;
     }
-}
-
-body main section div article .tabla-navegacion {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.primer-seccion-pagina-1 .tabla-navegacion h2 {
-    display: flex;
-    flex-direction: column;
-    font-size: x-large;
-    text-align: center;
-    justify-content: center;
-    padding: 5px;
-    width: 100%;
-}
-
-body main section div article .tabla-navegacion2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 25px;
 }
 
 body main section div article div .imagen-presentacion{
