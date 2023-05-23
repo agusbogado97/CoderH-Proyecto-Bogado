@@ -1,0 +1,12 @@
+/*FORMATEO DE ESTILO*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+a:link , a:visited , a:active {
+    text-decoration: none;
+    transition: 0,5s;
+}
