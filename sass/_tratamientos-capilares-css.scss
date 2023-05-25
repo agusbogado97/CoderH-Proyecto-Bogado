@@ -1,0 +1,179 @@
+
+body main .seccion-t-c {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+@media (max-width:1047px) {
+    body main .seccion-t-c{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+body main section .primer-container-t-c {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+@media (max-width:1047px) {
+    body main section .primer-container-t-c{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+body main section div .baño-de-crema-container {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+body main section div article .baño-de-crema-img {
+    display: flex;
+    text-align: center;
+    border: black ridge 5px;
+    height: 250px;
+    width: 250px;
+}
+
+body main section div .h2-p-t-c {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 100px;
+}
+
+
+body main section div article div .heading-tratamientos {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+body main section div article div .p-baño {
+    display: flex;
+    border: black 2px dashed;
+    padding: 4px 4px 4px 4px;
+    background-color:  rgb(162, 120, 202);
+}
+
+
+body main section .segundo-container-t-c {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+@media (max-width:1047px) {
+    body main section .segundo-container-t-c{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+body main section div .shock-container {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    }
+
+body main section div article .shock-img {
+    display: flex;
+    text-align: center;
+    border: black ridge 5px;
+    height: 250px;
+    width: 250px;
+}
+
+
+
+body main section div .h2-p-s {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 100px;
+}
+
+body main section div .h2-p-s div .heading-tratamientos {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+body main section div article div .p-shock {
+    display: flex;
+    border: black 2px dashed;
+    padding: 4px 4px 4px 4px;
+    background-color:  rgb(162, 120, 202);
+}
+
+body main section .tercer-container-t-c {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+@media (max-width:1047px) {
+    body main section .tercer-container-t-c{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+body main section div .alisado-container {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+body main section div article .alisado-img {
+    display: flex;
+    text-align: center;
+    border: black ridge 5px;
+    height: 250px;
+    width: 450px;
+}
+
+@media (max-width:1047px) {
+    body main section div article .alisado-img{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 150px;
+        width: 300px;
+    }
+}
+
+body main section div .h2-p-a {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 100px;
+}
+
+body main section div .h2-p-a div .heading-tratamientos {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+body main section div article div .p-alisado {
+    display: flex;
+    border: black 2px dashed;
+    padding: 4px 4px 4px 4px;
+    background-color:  rgb(162, 120, 202);
+}

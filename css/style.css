@@ -13,7 +13,10 @@ a:link, a:visited, a:active {
   transition: 0, 5s;
 }
 
-/*header*/
+body {
+  background-color: rosybrown;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -53,11 +56,6 @@ body header .banner {
     height: 300px;
   }
 }
-body {
-  background-color: rosybrown;
-}
-
-/*NAV*/
 .navbar {
   background: rgb(166, 61, 156);
   background: linear-gradient(140deg, rgb(166, 61, 156) 26%, rgba(92, 57, 85, 0.9920343137) 50%);
@@ -65,18 +63,63 @@ body {
   width: 100%;
   z-index: 100;
 }
-
-.nav-link:hover {
+.navbar .nav-link:hover {
   background-color: rosybrown;
   border-bottom: 2px solid black;
   border-radius: 10%;
 }
-
-.nav-link:active {
+.navbar .nav-link:active {
   background-color: brown;
 }
 
-/*index*/
+.pie-de-pagina {
+  display: flex;
+  background: rgb(166, 61, 156);
+  background: linear-gradient(180deg, rgb(166, 61, 156) 26%, rgba(92, 57, 85, 0.9920343137) 69%);
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  border-top: ridge black 5px;
+  border-bottom: ridge black 5px;
+  justify-content: center;
+}
+
+body footer div ul {
+  display: flex;
+  list-style: none;
+}
+
+body footer div ul li img {
+  display: flex;
+  margin: 50px;
+  height: 30px;
+  width: 30px;
+}
+
+body footer div ul li a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+body footer div ul li a:hover {
+  background-color: rosybrown;
+  border-bottom: 2px solid black;
+  border-radius: 50%;
+}
+
+body footer div ul li a:active {
+  background-color: brown;
+}
+
+body footer div ul li a p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  color: black;
+}
+
 .primer-container {
   display: flex;
   flex-direction: row;
@@ -188,56 +231,6 @@ body main section div .tabla-navegacion3 {
   background-color: rgb(162, 120, 202);
 }
 
-/*footer*/
-.pie-de-pagina {
-  display: flex;
-  background: rgb(166, 61, 156);
-  background: linear-gradient(180deg, rgb(166, 61, 156) 26%, rgba(92, 57, 85, 0.9920343137) 69%);
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  border-top: ridge black 5px;
-  border-bottom: ridge black 5px;
-  justify-content: center;
-}
-
-body footer div ul {
-  display: flex;
-  list-style: none;
-}
-
-body footer div ul li img {
-  display: flex;
-  margin: 50px;
-  height: 30px;
-  width: 30px;
-}
-
-body footer div ul li a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
-
-body footer div ul li a:hover {
-  background-color: rosybrown;
-  border-bottom: 2px solid black;
-  border-radius: 50%;
-}
-
-body footer div ul li a:active {
-  background-color: brown;
-}
-
-body footer div ul li a p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-style: italic;
-  color: black;
-}
-
-/*Tratamientos Capilares*/
 body main .seccion-t-c {
   display: flex;
   flex-direction: column;
@@ -408,7 +401,6 @@ body main section div article div .p-alisado {
   background-color: rgb(162, 120, 202);
 }
 
-/*COLOR*/
 body main .seccion-color {
   display: flex;
   flex-direction: column;
@@ -469,7 +461,6 @@ body main section .articulos-caja {
   padding: 10px;
 }
 
-/*GALERIA DE FOTOS*/ /*GRILLAS*/ /*FLEX*/ /*APLICANDO METODO BEM*/
 .container-galeria-de-fotos {
   display: flex;
   flex-direction: column;
@@ -593,7 +584,6 @@ body main section .articulos-caja {
   height: 500px;
 }
 
-/*Ubicación y Turnos*/
 .seccion-mapa {
   display: flex;
   flex-direction: row;
@@ -720,5 +710,9 @@ main section div article .caja-p-mapa {
   width: 100%;
   height: 100px;
 }
+
+/*COLOR*/
+/*GALERIA DE FOTOS*/ /*GRILLAS*/ /*FLEX*/ /*APLICANDO METODO BEM*/
+/*Ubicación y Turnos*/
 
 /*# sourceMappingURL=style.css.map */
