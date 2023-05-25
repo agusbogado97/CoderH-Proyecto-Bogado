@@ -3,15 +3,22 @@
     background: rgb(166,61,156);
     background: linear-gradient(180deg, rgba(166,61,156,1) 26%, rgba(92,57,85,0.9920343137254902) 69%);
     width: 100%;
-    height: 200px;
+    height: 150px;
     position: absolute;
     border-top: ridge black 5px;
     border-bottom: ridge black 5px;
     justify-content: center;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
 }
 
 body footer div ul {
 display: flex;
+justify-content: center;
 list-style: none;
 }
 
@@ -44,4 +51,11 @@ justify-content: center;
 text-align: center;
 font-style: italic;
 color: black;
+}
+
+body footer div .h6-footer {
+    display: flex;
+    justify-content: end;
+
+    font-style: italic;
 }
