@@ -1,179 +1,124 @@
-
-body main .seccion-t-c {
+.seccion-t-c {
     display: flex;
     flex-direction: column;
-    text-align: start;
-    margin-top: 100px;
-    margin-left: 200px;
-}
-
-@media (max-width:1047px) {
-    body main .seccion-t-c{
+    justify-content: start;
+    margin-top: 50px;
+    .seccion-t-c__baño-de-crema-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        margin-bottom: 150px;
+    }
+    @media (max-width:1047px) {
+        .seccion-t-c__baño-de-crema-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .baño-de-crema-img {
+        display: flex;
+        text-align: center;
+        border: black ridge 5px;
+        height: 250px;
+        width: 250px;
+        margin-left: 50px;
+    }
+    .seccion-t-c-baño-de-crema-container__2art {
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: center;
+        border: black 2px dashed;
+        background-color: $fondo-purpura;
+        margin: 25px 25px 25px 25px;
+        padding: 5px 5px 5px 5px;
     }
-}
-
-body main section .primer-container-t-c {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 50px;
-}
-
-@media (max-width:1047px) {
-    body main section .primer-container-t-c{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-body main section div .baño-de-crema-container {
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-}
-
-body main section div article .baño-de-crema-img {
-    display: flex;
-    text-align: center;
-    border: black ridge 5px;
-    height: 250px;
-    width: 250px;
-}
-
-body main section div .h2-p-t-c {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    margin-top: 25px;
-    margin-right: 100px;
-}
-
-
-body main section div article div .heading-tratamientos {
-    display: flex;
-    margin-bottom: 15px;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-}
-
-body main section div article div .p-baño {
-    display: flex;
-    border: black 2px dashed;
-    padding: 4px 4px 4px 4px;
-    background-color:  rgb(162, 120, 202);
-}
-
-
-body main section .segundo-container-t-c {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 50px;
-}
-
-@media (max-width:1047px) {
-    body main section .segundo-container-t-c{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
-}
-
-body main section div .shock-container {
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-    }
-
-body main section div article .shock-img {
-    display: flex;
-    text-align: center;
-    border: black ridge 5px;
-    height: 250px;
-    width: 250px;
-}
-
-
-
-body main section div .h2-p-s {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    margin-top: 25px;
-    margin-right: 100px;
-}
-
-body main section div .h2-p-s div .heading-tratamientos {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-body main section div article div .p-shock {
-    display: flex;
-    border: black 2px dashed;
-    padding: 4px 4px 4px 4px;
-    background-color:  rgb(162, 120, 202);
-}
-
-body main section .tercer-container-t-c {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 50px;
-}
-
-@media (max-width:1047px) {
-    body main section .tercer-container-t-c{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
-}
-
-body main section div .alisado-container {
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-}
-
-body main section div article .alisado-img {
-    display: flex;
-    text-align: center;
-    border: black ridge 5px;
-    height: 250px;
-    width: 450px;
-}
-
-@media (max-width:1047px) {
-    body main section div article .alisado-img{
+    .p-baño {
         display: flex;
         justify-content: center;
         text-align: center;
-        height: 150px;
-        width: 300px;
+        margin-top: 15px;
+    }
+
+    .seccion-t-c__shock-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        margin-bottom: 150px;
+    }
+    @media (max-width:1047px) {
+        .seccion-t-c__shock-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .shock-img {
+        display: flex;
+        text-align: center;
+        border: black ridge 5px;
+        height: 250px;
+        width: 250px;
+        margin-left: 50px;
+    }
+    .seccion-t-c-shock-container__2art {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: black 2px dashed;
+        background-color: $fondo-purpura;
+        margin: 25px 25px 25px 25px;
+        padding: 5px 5px 5px 5px;
+    }
+    .p-shock {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .seccion-t-c__alisado-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        margin-bottom: 150px;
+    }
+    @media (max-width:1047px) {
+        .seccion-t-c__alisado-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .alisado-img {
+        display: flex;
+        text-align: center;
+        border: black ridge 5px;
+        height: 250px;
+        width: 350px;
+        margin-left: 50px;
+    }
+    .seccion-t-c-alisado-container__2art {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: black 2px dashed;
+        background-color: $fondo-purpura;
+        margin: 25px 25px 25px 25px;
+        padding: 5px 5px 5px 5px;
+    }
+    .p-alisado {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 15px;
     }
 }
 
-body main section div .h2-p-a {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    margin-top: 25px;
-    margin-right: 100px;
-}
 
-body main section div .h2-p-a div .heading-tratamientos {
-    display: flex;
-    margin-bottom: 15px;
-}
 
-body main section div article div .p-alisado {
-    display: flex;
-    border: black 2px dashed;
-    padding: 4px 4px 4px 4px;
-    background-color:  rgb(162, 120, 202);
-}
+
+
+
+
+
