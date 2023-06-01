@@ -325,24 +325,24 @@ body main section .primer-seccion-pagina .primer-seccion-pagina-1__p {
   text-align: center;
   margin-top: 15px;
 }
-
 @media (max-width: 1047px) {
-  .seccion-t-c__baño-de-crema-container {
+  .seccion-t-c .seccion-t-c__baño-de-crema-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .seccion-t-c__shock-container {
+  .seccion-t-c .seccion-t-c__shock-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .seccion-t-c__alisado-container {
+  .seccion-t-c .seccion-t-c__alisado-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
+
 body main .seccion-color {
   display: flex;
   flex-direction: column;

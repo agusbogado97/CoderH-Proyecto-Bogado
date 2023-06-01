@@ -92,25 +92,27 @@
         text-align: center;
         margin-top: 15px;
     }
+
+    @media (max-width:1047px) {
+        .seccion-t-c__baño-de-crema-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .seccion-t-c__shock-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .seccion-t-c__alisado-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }
 
-@media (max-width:1047px) {
-    .seccion-t-c__baño-de-crema-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .seccion-t-c__shock-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .seccion-t-c__alisado-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
+
 
 
 
