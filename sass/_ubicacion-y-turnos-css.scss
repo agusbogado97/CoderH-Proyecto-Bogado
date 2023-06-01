@@ -6,78 +6,44 @@
     margin-top: 50px;
 }
 
-@media (max-width:1047px){
-    .seccion-mapa {
-        flex-direction: column;
-    }
-}
-
-
-main section div .mapa {
+.mapa {
     display: flex;
     border: 5px ridge black;
     padding: 0,5px;
 }
 
-@media (max-width:1047px){
-    main section div .mapa {
-        display: flex;
-        border: none;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-
-
-main section div .texto-seccion-mapa{
+.texto-seccion-mapa{
     display: flex;
     flex-direction: column;
     margin-left: 15px;
     margin-top: 25px;
 }
 
-main section div article .caja-h2-mapa {
+.caja-h2-mapa {
     display: flex;
     justify-content: center;
     padding: 15px;
-}
-
-.caja-h2-mapa .h2-mapa {
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    width: 100%;
-}
-
-@media (max-width:1047px) {
     .caja-h2-mapa .h2-mapa {
         display: flex;
         justify-content: center;
-}
+        font-size: x-large;
+        width: 100%;
+    }
 }
 
-main section div article .caja-p-mapa {
+.caja-p-mapa {
     display: flex;
     padding: 15px;
     background-color: rgb(162, 120, 202);
     border: dashed 2px black;
-}
-
-@media (max-width:1047px) {
-    main section div article .caja-p-mapa {
+    .p-mapa {
         display: flex;
-        text-align: center;
         justify-content: center;
-        margin-right: 20px;
-}
+        text-align: center;
+    }
 }
 
-.p-mapa {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+
 
 .caja-turnos-escribenos {
     display: flex;
@@ -113,23 +79,47 @@ main section div article .caja-p-mapa {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    .caja-form {
+        display: flex;
+        justify-content: center;
+        text-align: start;
+        border: ridge black 5px;
+        padding: 45px;
+        background-color: rgb(162, 120, 202);
+    }
+    
+    .caja-form-form__div {
+        margin-bottom: 15px;
+    }
+    
+    #exampleText1 {
+        width: 100%;
+        height: 100px;
+    }
 }
 
-.formulario .caja-form {
+
+
+@media (max-width:1047px) {
+    .seccion-mapa {
+        flex-direction: column;
+}
+.mapa {
     display: flex;
+    border: none;
+    padding: 0,5px;
     justify-content: center;
-    text-align: start;
-    border: ridge black 5px;
-    padding: 25px;
-    background-color: rgb(162, 120, 202);
 }
 
-.caja-form-form__div {
-    margin-bottom: 15px;
+    .caja-h2-mapa .h2-mapa {
+        display: flex;
+        justify-content: center;
 }
-
-#exampleText1 {
-    width: 100%;
-    height: 100px;
+    .caja-p-mapa {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-right: 20px;
+}
 }
 

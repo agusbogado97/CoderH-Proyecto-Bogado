@@ -133,36 +133,24 @@ body footer div .h6-footer {
   font-style: italic;
 }
 
-.primer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 1047px) {
-  .primer-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-}
 body main section .primer-seccion-pagina {
   display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
-@media (max-width: 1047px) {
-  .primer-seccion-pagina {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
+body main section .primer-seccion-pagina .primer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-body main section div .primer-seccion-pagina-1 {
+body main section .primer-seccion-pagina .c-logo-portada {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+body main section .primer-seccion-pagina .primer-seccion-pagina-1 {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -173,34 +161,17 @@ body main section div .primer-seccion-pagina-1 {
   margin-top: 50px;
   margin-right: 50px;
 }
-
-@media (max-width: 1047px) {
-  .primer-seccion-pagina-1 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-}
-body main section div article div .imagen-presentacion {
+body main section .primer-seccion-pagina .imagen-presentacion {
   display: flex;
   height: 250px;
   border: 5px ridge black;
 }
-
-.c-logo-portada {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-body main section article div h2 {
+body main section .primer-seccion-pagina .primer-seccion-pagina-1__h2 {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-
-body main section article div p {
+body main section .primer-seccion-pagina .primer-seccion-pagina-1__p {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -216,25 +187,23 @@ body main section article div p {
   background-color: rgb(162, 120, 202);
 }
 
-body main section div .video-inicio {
+.video-inicio {
   display: flex;
   margin-top: 40px;
   justify-content: center;
 }
-
-body main section div .video-principal {
+.video-inicio .video-principal {
   display: flex;
   justify-content: center;
   text-align: center;
   border: ridge 5px black;
 }
 
-body main section .segunda-seccion-pagina-1 {
+.segunda-seccion-pagina-1 {
   display: flex;
   justify-content: center;
 }
-
-body main section div .tabla-navegacion3 {
+.segunda-seccion-pagina-1 .tabla-navegacion3 {
   display: flex;
   border: ridge 5px black;
   text-align: center;
@@ -244,6 +213,25 @@ body main section div .tabla-navegacion3 {
   background-color: rgb(162, 120, 202);
 }
 
+@media (max-width: 1047px) {
+  .primer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .primer-seccion-pagina {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .primer-seccion-pagina-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
 .seccion-t-c {
   display: flex;
   flex-direction: column;
@@ -255,13 +243,6 @@ body main section div .tabla-navegacion3 {
   flex-direction: row;
   justify-content: stretch;
   margin-bottom: 150px;
-}
-@media (max-width: 1047px) {
-  .seccion-t-c .seccion-t-c__baño-de-crema-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 }
 .seccion-t-c .baño-de-crema-img {
   display: flex;
@@ -292,13 +273,6 @@ body main section div .tabla-navegacion3 {
   justify-content: stretch;
   margin-bottom: 150px;
 }
-@media (max-width: 1047px) {
-  .seccion-t-c .seccion-t-c__shock-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 .seccion-t-c .shock-img {
   display: flex;
   text-align: center;
@@ -328,13 +302,6 @@ body main section div .tabla-navegacion3 {
   justify-content: stretch;
   margin-bottom: 150px;
 }
-@media (max-width: 1047px) {
-  .seccion-t-c .seccion-t-c__alisado-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 .seccion-t-c .alisado-img {
   display: flex;
   text-align: center;
@@ -359,6 +326,23 @@ body main section div .tabla-navegacion3 {
   margin-top: 15px;
 }
 
+@media (max-width: 1047px) {
+  .seccion-t-c__baño-de-crema-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seccion-t-c__shock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seccion-t-c__alisado-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 body main .seccion-color {
   display: flex;
   flex-direction: column;
@@ -366,15 +350,13 @@ body main .seccion-color {
   text-align: center;
   margin-top: 15px;
 }
-
-body main section .container-p-color-principal {
+body main .seccion-color .container-p-color-principal {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-
-body main section article .container-p-colorh2 {
+body main .seccion-color .container-p-colorh2 {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -384,31 +366,26 @@ body main section article .container-p-colorh2 {
   padding: 5px;
   margin-bottom: 15px;
 }
-
-.h2-color {
+body main .seccion-color .h2-color {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-
-body main section article .container-p-color {
+body main .seccion-color .container-p-color {
   display: flex;
   text-align: center;
   margin-bottom: 25px;
 }
-
-body main section .container-imagen-color {
+body main .seccion-color .container-imagen-color {
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
 }
-
-body main section article .imagen-color {
+body main .seccion-color .imagen-color {
   display: flex;
   border: 5px black ridge;
 }
-
-body main section .articulos-caja {
+body main .seccion-color .articulos-caja {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -425,8 +402,7 @@ body main section .articulos-caja {
   justify-content: center;
   text-align: center;
 }
-
-.container-galeria-de-fotos__cont-grillas {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas {
   margin: 100px auto;
   width: 1000px;
   height: 450px;
@@ -440,66 +416,43 @@ body main section .articulos-caja {
   row-gap: 20px;
   justify-content: center;
 }
-
-.container-galeria-de-fotos__cont-grillas img {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas img {
   width: 200px;
   height: 200px;
 }
-
-@media (max-width: 1047px) {
-  .container-galeria-de-fotos__cont-grillas {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: auto;
-    height: auto;
-  }
-  .container-galeria-de-fotos__cont-grillas img {
-    width: 300px;
-    height: 300px;
-  }
-}
-.container-galeria-de-fotos__cont-grillas .grilla-img1 {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas .grilla-img1 {
   grid-column: 1/2;
   grid-row: 1;
 }
-
-.container-galeria-de-fotos__cont-grillas .grilla-img2 {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas .grilla-img2 {
   grid-column: 2/3;
   grid-row: 1;
 }
-
-.container-galeria-de-fotos__cont-grillas .grilla-img3 {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas .grilla-img3 {
   grid-column: 3/4;
   grid-row: 1;
 }
-
-.container-galeria-de-fotos__cont-grillas .grilla-img4 {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas .grilla-img4 {
   grid-column: 4/5;
   grid-row: 1;
 }
-
-.container-galeria-de-fotos__cont-grillas .grilla-img5 {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas .grilla-img5 {
   grid-column: 1/2;
   grid-row: 2;
 }
-
-.container-galeria-de-fotos__cont-grillas .grilla-img6 {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas .grilla-img6 {
   grid-column: 2/3;
   grid-row: 2;
 }
-
-.container-galeria-de-fotos__cont-grillas .grilla-img7 {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas .grilla-img7 {
   grid-column: 3/4;
   grid-row: 2;
 }
-
-.container-galeria-de-fotos__cont-grillas .grilla-img8 {
+.container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas .grilla-img8 {
   grid-column: 4/5;
   grid-row: 2;
 }
-
-.cont-flex-color {
+.container-galeria-de-fotos .cont-flex-color {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -510,31 +463,41 @@ body main section .articulos-caja {
   border-bottom: ridge 5px black;
   padding: 5px;
 }
-
-.cont-flex-color__h2 {
+.container-galeria-de-fotos .cont-flex-color__h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
-
-.cont-flex-color__h3 {
+.container-galeria-de-fotos .cont-flex-color__h3 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
-
-.cont-flex-color__a {
+.container-galeria-de-fotos .cont-flex-color__a {
   display: flex;
   color: blue;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
 }
+@media (max-width: 1047px) {
+  .container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+  .container-galeria-de-fotos .container-galeria-de-fotos__cont-grillas img {
+    width: 300px;
+    height: 300px;
+  }
+}
 
 .carrousel-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 
 #carouselExampleControls {
@@ -542,6 +505,11 @@ body main section .articulos-caja {
   height: 500px;
 }
 
+@media (max-width: 1047px) {
+  .carrousel-container {
+    margin-bottom: 30px;
+  }
+}
 .seccion-mapa {
   display: flex;
   flex-direction: row;
@@ -549,67 +517,38 @@ body main section .articulos-caja {
   margin-top: 50px;
 }
 
-@media (max-width: 1047px) {
-  .seccion-mapa {
-    flex-direction: column;
-  }
-}
-main section div .mapa {
+.mapa {
   display: flex;
   border: 5px ridge black;
   padding: 0, 5px;
 }
 
-@media (max-width: 1047px) {
-  main section div .mapa {
-    display: flex;
-    border: none;
-    justify-content: center;
-    text-align: center;
-  }
-}
-main section div .texto-seccion-mapa {
+.texto-seccion-mapa {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
   margin-top: 25px;
 }
 
-main section div article .caja-h2-mapa {
+.caja-h2-mapa {
   display: flex;
   justify-content: center;
   padding: 15px;
 }
-
-.caja-h2-mapa .h2-mapa {
+.caja-h2-mapa .caja-h2-mapa .h2-mapa {
   display: flex;
   justify-content: center;
   font-size: x-large;
   width: 100%;
 }
 
-@media (max-width: 1047px) {
-  .caja-h2-mapa .h2-mapa {
-    display: flex;
-    justify-content: center;
-  }
-}
-main section div article .caja-p-mapa {
+.caja-p-mapa {
   display: flex;
   padding: 15px;
   background-color: rgb(162, 120, 202);
   border: dashed 2px black;
 }
-
-@media (max-width: 1047px) {
-  main section div article .caja-p-mapa {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-right: 20px;
-  }
-}
-.p-mapa {
+.caja-p-mapa .p-mapa {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -650,23 +589,42 @@ main section div article .caja-p-mapa {
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .formulario .caja-form {
   display: flex;
   justify-content: center;
   text-align: start;
   border: ridge black 5px;
-  padding: 25px;
+  padding: 45px;
   background-color: rgb(162, 120, 202);
 }
-
-.caja-form-form__div {
+.formulario .caja-form-form__div {
   margin-bottom: 15px;
 }
-
-#exampleText1 {
+.formulario #exampleText1 {
   width: 100%;
   height: 100px;
+}
+
+@media (max-width: 1047px) {
+  .seccion-mapa {
+    flex-direction: column;
+  }
+  .mapa {
+    display: flex;
+    border: none;
+    padding: 0, 5px;
+    justify-content: center;
+  }
+  .caja-h2-mapa .h2-mapa {
+    display: flex;
+    justify-content: center;
+  }
+  .caja-p-mapa {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

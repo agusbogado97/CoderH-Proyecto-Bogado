@@ -9,13 +9,6 @@
         justify-content: stretch;
         margin-bottom: 150px;
     }
-    @media (max-width:1047px) {
-        .seccion-t-c__baño-de-crema-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
     .baño-de-crema-img {
         display: flex;
         text-align: center;
@@ -39,19 +32,11 @@
         text-align: center;
         margin-top: 15px;
     }
-
     .seccion-t-c__shock-container {
         display: flex;
         flex-direction: row;
         justify-content: stretch;
         margin-bottom: 150px;
-    }
-    @media (max-width:1047px) {
-        .seccion-t-c__shock-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
     }
     .shock-img {
         display: flex;
@@ -83,13 +68,7 @@
         justify-content: stretch;
         margin-bottom: 150px;
     }
-    @media (max-width:1047px) {
-        .seccion-t-c__alisado-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
+
     .alisado-img {
         display: flex;
         text-align: center;
@@ -112,6 +91,24 @@
         justify-content: center;
         text-align: center;
         margin-top: 15px;
+    }
+}
+
+@media (max-width:1047px) {
+    .seccion-t-c__baño-de-crema-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .seccion-t-c__shock-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .seccion-t-c__alisado-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
