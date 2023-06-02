@@ -19,7 +19,7 @@ body main section .primer-seccion-pagina{
         flex-direction: column;
         text-align: center;
         border: 5px ridge black;
-        background-color: rgb(162, 120, 202);
+        background-color: $fondo-purpura;
         margin-left: 50px;
         margin-bottom: 50px;
         margin-top: 50px;
@@ -50,7 +50,7 @@ body main section .primer-seccion-pagina{
     text-align: center;
     justify-content: center;
     width: 100%;
-    background-color:  rgb(162, 120, 202);
+    background-color:  $fondo-purpura;
 }
 .video-inicio {
     display: flex;
@@ -74,7 +74,7 @@ body main section .primer-seccion-pagina{
         margin-top: 50px;
         margin-bottom: 75px;
         width: 400px;
-        background-color:  rgb(162, 120, 202);
+        background-color: $fondo-purpura;
     }
 }
 

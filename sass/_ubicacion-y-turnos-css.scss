@@ -5,7 +5,6 @@
     justify-content: center;
     margin-top: 50px;
 }
-
 .mapa {
     display: flex;
     border: 5px ridge black;
@@ -34,7 +33,7 @@
 .caja-p-mapa {
     display: flex;
     padding: 15px;
-    background-color: rgb(162, 120, 202);
+    background-color: $fondo-purpura;
     border: dashed 2px black;
     .p-mapa {
         display: flex;
@@ -51,14 +50,14 @@
     margin-top: 50px;
 }
 
-.caja-turnos-escribenos .caja-turnos {
+.caja-turnos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     border-top: ridge black 5px;
     border-bottom: ridge black 5px;
-    background-color: rgb(162, 120, 202);
+    background-color: $fondo-purpura;
     padding: 15px;
 }
 
@@ -71,7 +70,7 @@
     margin-bottom: 50px;
     border-top: ridge black 5px;
     border-bottom: ridge black 5px;
-    background-color: rgb(162, 120, 202);
+    background-color: $fondo-purpura;
     padding: 15px;
 }
 
@@ -84,14 +83,17 @@
         justify-content: center;
         text-align: start;
         border: ridge black 5px;
-        padding: 45px;
-        background-color: rgb(162, 120, 202);
+        background-color: $fondo-purpura;
     }
-    
+
+    .formmulario-caja-form__form{
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
     .caja-form-form__div {
         margin-bottom: 15px;
     }
-    
     #exampleText1 {
         width: 100%;
         height: 100px;

@@ -560,7 +560,7 @@ body main .seccion-color .articulos-caja {
   margin-top: 50px;
 }
 
-.caja-turnos-escribenos .caja-turnos {
+.caja-turnos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -594,8 +594,12 @@ body main .seccion-color .articulos-caja {
   justify-content: center;
   text-align: start;
   border: ridge black 5px;
-  padding: 45px;
   background-color: rgb(162, 120, 202);
+}
+.formulario .formmulario-caja-form__form {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
 }
 .formulario .caja-form-form__div {
   margin-bottom: 15px;
