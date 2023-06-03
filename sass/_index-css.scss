@@ -30,6 +30,12 @@ body main section .primer-seccion-pagina{
         height: 250px;
         border: 5px ridge black;
     }
+    @media (max-width: 450px) {
+        .imagen-presentacion{
+        height: 150px;
+        width: 250px;
+    }
+    }
     .primer-seccion-pagina-1__h2{
         display: flex;
         justify-content: center;
@@ -75,6 +81,11 @@ body main section .primer-seccion-pagina{
         margin-bottom: 75px;
         width: 400px;
         background-color: $fondo-purpura;
+    }
+    @media (max-width: 450px) {
+        .tabla-navegacion3{
+        width: 250px;
+    }
     }
 }
 

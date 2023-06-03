@@ -48,78 +48,80 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-}
-
-.caja-turnos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border-top: ridge black 5px;
-    border-bottom: ridge black 5px;
-    background-color: $fondo-purpura;
-    padding: 15px;
-}
-
-.caja-turnos-escribenos .caja-escribenos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-top: ridge black 5px;
-    border-bottom: ridge black 5px;
-    background-color: $fondo-purpura;
-    padding: 15px;
-}
-
-.formulario {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    .caja-form {
+    .caja-turnos {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        text-align: start;
-        border: ridge black 5px;
+        text-align: center;
+        border-top: ridge black 5px;
+        border-bottom: ridge black 5px;
         background-color: $fondo-purpura;
+        padding: 15px;
     }
+    .caja-escribenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-top: ridge black 5px;
+        border-bottom: ridge black 5px;
+        background-color: $fondo-purpura;
+        padding: 15px;
+    }
+}
+
+
 
     .formmulario-caja-form__form{
         display: flex;
+        justify-content: center;
         flex-direction: column;
         padding: 25px;
+        .caja-form-form__div {
+            margin-bottom: 15px;
+        }
+        #exampleInputText1 {
+            height: 100px;
+        }
     }
-    .caja-form-form__div {
-        margin-bottom: 15px;
-    }
-    #exampleText1 {
-        width: 100%;
-        height: 100px;
-    }
-}
 
-@media (max-width:1047px) {
+
+
+    @media (max-width:1047px) {
     .seccion-mapa {
         flex-direction: column;
-}
-.mapa {
-    display: flex;
-    border: none;
-    padding: 0,5px;
-    justify-content: center;
+    }
+    .mapa {
+        display: flex;
+        border: none;
+        padding: 0,5px;
+        justify-content: center;
+    }
+
+        .caja-h2-mapa .h2-mapa {
+            display: flex;
+            justify-content: center;
+    }
+        .caja-p-mapa {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-right: 20px;
+    }
 }
 
-    .caja-h2-mapa .h2-mapa {
+@media (max-width: 548px){
+    .formmulario-caja-form__form .form-control{
         display: flex;
+        width: 75%;
         justify-content: center;
+    }
+    #submit-id{
+        width: 75%;
+    }
+    #reset-id{
+        width: 75%;
+    }
 }
-    .caja-p-mapa {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        margin-right: 20px;
-}
-}
-

@@ -14,17 +14,18 @@
 .footer-container {
     display: flex;
     flex-direction: column;
+    margin-top: 75px;
 }
 
 body footer div ul {
 display: flex;
-justify-content: center;
+justify-content: space-evenly;
 list-style: none;
 }
 
 body footer div ul li img {
 display: flex;
-margin: 50px;
+justify-content: space-around;
 height: 30px;
 width: 30px;
 }
@@ -33,28 +34,29 @@ body footer div ul li a {
 display: flex;
 justify-content: center;
 text-decoration: none;
+transition: 1s;
 }
 
 body footer div ul li a:hover {
 background-color: rosybrown;
 border-bottom: 2px solid black;
-border-radius: 50%;
+transition: 1s;
 }
 
 body footer div ul li a:active {
 background-color: brown;
 }
 
-body footer div ul li a p {
-display: flex;
-justify-content: center;
-text-align: center;
-font-style: italic;
-color: black;
-}
-
-body footer div .h6-footer {
+.footer-container2 {
     display: flex;
     justify-content: end;
-    font-style: italic;
+    margin-top: 60px;
+}
+
+@media (max-width: 380px){
+    .footer-container2 {
+    display: flex;
+    justify-content: start;
+    margin-top: 75px;
+    }
 }

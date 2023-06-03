@@ -88,17 +88,18 @@ body header .banner {
 .footer-container {
   display: flex;
   flex-direction: column;
+  margin-top: 75px;
 }
 
 body footer div ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
 }
 
 body footer div ul li img {
   display: flex;
-  margin: 50px;
+  justify-content: space-around;
   height: 30px;
   width: 30px;
 }
@@ -107,32 +108,32 @@ body footer div ul li a {
   display: flex;
   justify-content: center;
   text-decoration: none;
+  transition: 1s;
 }
 
 body footer div ul li a:hover {
   background-color: rosybrown;
   border-bottom: 2px solid black;
-  border-radius: 50%;
+  transition: 1s;
 }
 
 body footer div ul li a:active {
   background-color: brown;
 }
 
-body footer div ul li a p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-style: italic;
-  color: black;
-}
-
-body footer div .h6-footer {
+.footer-container2 {
   display: flex;
   justify-content: end;
-  font-style: italic;
+  margin-top: 60px;
 }
 
+@media (max-width: 380px) {
+  .footer-container2 {
+    display: flex;
+    justify-content: start;
+    margin-top: 75px;
+  }
+}
 body main section .primer-seccion-pagina {
   display: flex;
   justify-content: center;
@@ -165,6 +166,12 @@ body main section .primer-seccion-pagina .imagen-presentacion {
   display: flex;
   height: 250px;
   border: 5px ridge black;
+}
+@media (max-width: 450px) {
+  body main section .primer-seccion-pagina .imagen-presentacion {
+    height: 150px;
+    width: 250px;
+  }
 }
 body main section .primer-seccion-pagina .primer-seccion-pagina-1__h2 {
   display: flex;
@@ -211,6 +218,11 @@ body main section .primer-seccion-pagina .primer-seccion-pagina-1__p {
   margin-bottom: 75px;
   width: 400px;
   background-color: rgb(162, 120, 202);
+}
+@media (max-width: 450px) {
+  .segunda-seccion-pagina-1 .tabla-navegacion3 {
+    width: 250px;
+  }
 }
 
 @media (max-width: 1047px) {
@@ -309,6 +321,12 @@ body main section .primer-seccion-pagina .primer-seccion-pagina-1__p {
   height: 250px;
   width: 350px;
   margin-left: 50px;
+}
+@media (max-width: 450px) {
+  .seccion-t-c .alisado-img {
+    width: 250px;
+    height: 150px;
+  }
 }
 .seccion-t-c .seccion-t-c-alisado-container__2art {
   display: flex;
@@ -599,8 +617,7 @@ body main .seccion-color .articulos-caja {
   flex-direction: column;
   margin-top: 50px;
 }
-
-.caja-turnos {
+.caja-turnos-escribenos .caja-turnos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -610,7 +627,6 @@ body main .seccion-color .articulos-caja {
   background-color: rgb(162, 120, 202);
   padding: 15px;
 }
-
 .caja-turnos-escribenos .caja-escribenos {
   display: flex;
   flex-direction: column;
@@ -624,28 +640,16 @@ body main .seccion-color .articulos-caja {
   padding: 15px;
 }
 
-.formulario {
+.formmulario-caja-form__form {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
-}
-.formulario .caja-form {
-  display: flex;
-  justify-content: center;
-  text-align: start;
-  border: ridge black 5px;
-  background-color: rgb(162, 120, 202);
-}
-.formulario .formmulario-caja-form__form {
-  display: flex;
   flex-direction: column;
   padding: 25px;
 }
-.formulario .caja-form-form__div {
+.formmulario-caja-form__form .caja-form-form__div {
   margin-bottom: 15px;
 }
-.formulario #exampleText1 {
-  width: 100%;
+.formmulario-caja-form__form #exampleInputText1 {
   height: 100px;
 }
 
@@ -668,6 +672,19 @@ body main .seccion-color .articulos-caja {
     text-align: center;
     justify-content: center;
     margin-right: 20px;
+  }
+}
+@media (max-width: 548px) {
+  .formmulario-caja-form__form .form-control {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+  }
+  #submit-id {
+    width: 75%;
+  }
+  #reset-id {
+    width: 75%;
   }
 }
 

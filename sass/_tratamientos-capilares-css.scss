@@ -77,6 +77,12 @@
         width: 350px;
         margin-left: 50px;
     }
+    @media (max-width: 450px) {
+            .alisado-img {
+            width: 250px;
+            height: 150px;
+        }
+    }
     .seccion-t-c-alisado-container__2art {
         display: flex;
         flex-direction: column;
