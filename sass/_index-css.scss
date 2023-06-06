@@ -109,3 +109,11 @@ body main section .primer-seccion-pagina{
         justify-content: center;
     }
 }
+
+
+@media (max-width: 450px) {
+    .video-principal{
+    height: 150px;
+    width: 250px;
+}
+}

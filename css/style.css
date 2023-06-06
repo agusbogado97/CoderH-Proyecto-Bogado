@@ -56,6 +56,13 @@ body header .banner {
     height: 300px;
   }
 }
+@media (max-width: 450px) {
+  body header .banner {
+    height: 200px;
+    width: 100%;
+    margin-top: 40%;
+  }
+}
 .navbar {
   background: rgb(166, 61, 156);
   background: linear-gradient(140deg, rgb(166, 61, 156) 26%, rgba(92, 57, 85, 0.9920343137) 50%);
@@ -63,10 +70,13 @@ body header .banner {
   width: 100%;
   z-index: 100;
 }
+.navbar .nav-link {
+  transition: 0.5s;
+}
 .navbar .nav-link:hover {
   background-color: rosybrown;
+  transition: 0.5s;
   border-bottom: 2px solid black;
-  border-radius: 10%;
 }
 .navbar .nav-link:active {
   background-color: brown;
@@ -242,6 +252,12 @@ body main section .primer-seccion-pagina .primer-seccion-pagina-1__p {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .video-principal {
+    height: 150px;
+    width: 250px;
   }
 }
 .seccion-t-c {

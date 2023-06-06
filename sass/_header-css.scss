@@ -39,16 +39,27 @@ body header .banner {
     }
 }
 
+@media (max-width: 450px) {
+    body header .banner{
+    height: 200px;
+    width: 100%;
+    margin-top: 40%;
+}
+}
+
 .navbar {
     background: rgb(166,61,156);
     background: linear-gradient(140deg, rgba(166,61,156,1) 26%, rgba(92,57,85,0.9920343137254902) 50%);
     position: fixed;
     width: 100%;
     z-index: 100;
+    .nav-link {
+        transition: .5s;
+    }
     .nav-link:hover {
         background-color: rosybrown;
+        transition: .5s;
         border-bottom: 2px solid black;
-        border-radius: 10%;
     }
     .nav-link:active {
         background-color: brown;
