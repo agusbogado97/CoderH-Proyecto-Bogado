@@ -156,3 +156,15 @@
         margin-bottom: 30px;
     }
 }
+
+@media (min-width:1450px){
+    .carrousel-container{
+        margin-bottom: 600px;
+    }
+}
+
+@media (min-width:2300px){
+    .carrousel-container {
+        margin-bottom: 1000px;
+    }
+}
